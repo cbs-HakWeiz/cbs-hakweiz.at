@@ -1,0 +1,338 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4faff;
+    color: #29445b;
+    line-height: 1.6;
+}
+
+/* FARBEN */
+:root {
+    --hellblau: #b9e3f8;
+    --mittelblau: #79c5ed;
+    --blau: #399bd0;
+    --dunkelblau: #164c70;
+    --weiss: #ffffff;
+    --hintergrund: #f4faff;
+}
+
+/* NAVIGATION */
+
+header {
+    background: white;
+    padding: 15px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 15px rgba(40, 100, 140, 0.10);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 1px;
+	text-align: left;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dunkelblau);
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--blau);
+}
+
+/* STARTSEITE / HERO */
+
+.hero {
+    min-height: 520px;
+    background: linear-gradient(
+        135deg,
+        #dff3ff,
+        #a9dcf5,
+        #7fc4eb
+    );
+    color: var(--dunkelblau);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 21px;
+    margin-bottom: 30px;
+}
+
+/* BUTTONS */
+
+.button {
+    display: inline-block;
+    background: var(--blau);
+    color: white;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: var(--dunkelblau);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(22, 76, 112, 0.2);
+}
+
+/* SEITENBEREICHE */
+
+section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+section h2 {
+    color: var(--dunkelblau);
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+section p {
+    font-size: 16px;
+}
+
+/* KARTEN */
+
+.cards {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(70, 140, 180, 0.10);
+    border: 1px solid #e0f1fa;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(70, 140, 180, 0.18);
+}
+
+.card h3 {
+    color: var(--blau);
+    margin-bottom: 15px;
+}
+
+/* ARTIKEL */
+
+.product {
+    border-top: 5px solid var(--mittelblau);
+}
+
+#suche {
+    max-width: 500px;
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #c8e8f8;
+    border-radius: 30px;
+    outline: none;
+    margin-top: 25px;
+    font-size: 16px;
+}
+
+#suche:focus {
+    border-color: var(--blau);
+}
+
+/* KONTAKTFORMULAR */
+
+form {
+    max-width: 550px;
+    margin: 35px auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #c8e5f5;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--blau);
+    box-shadow: 0 0 5px #b9e3f8;
+}
+
+/* FOOTER */
+
+footer {
+    background: var(--dunkelblau);
+    color: white;
+    padding: 45px 20px;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #b9e3f8;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* WECHSELNDE HINTERGRÜNDE */
+
+#team,
+#dienstleistungen {
+    background: #e5f4fd;
+}
+
+#ueber,
+#artikel,
+#kontakt {
+    background: #f4faff;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 800px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    section {
+        padding: 55px 6%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 21px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+.Logo
+{
+	width: 100px;
+	height: 100px;
+}
+.Geschäftsführung
+{
+	max-width: 500%;
+	height: 300px;
+}
+.Marketing
+{
+	max-width: 500%;
+	height: 300px;
+	
+}
+.Verkauf
+{
+	max-width: 500%;
+	height: 300px;
+}
+.Buchhaltung
+{
+	max-width: 500%;
+	height: 300px;
+}
+.Personal
+{
+	max-width: 500%;
+	height: 300px;
+}
+.Sekretariat
+{
+	max-width: 500%;
+	height: 300px;
+}
+.Einkauf
+{
+	max-width: 500%;
+	height: 300px;
+}

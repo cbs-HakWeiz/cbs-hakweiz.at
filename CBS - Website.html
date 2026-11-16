@@ -1,0 +1,399 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBS – Customized Business Solutions | HAK Weiz</title>
+	<link rel="stylesheet" href="design.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #243247;
+        }
+
+        header {
+            background: #102b4e;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            display: flex;
+            gap: 22px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #42c5d9;
+        }
+
+        .hero {
+            min-height: 480px;
+            background: linear-gradient(120deg, #102b4e, #176b91);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            background: #42c5d9;
+            color: #102b4e;
+            padding: 14px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin: 5px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: white;
+            transform: translateY(-3px);
+        }
+
+        section {
+            padding: 75px 10%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 32px;
+            color: #102b4e;
+            margin-bottom: 25px;
+        }
+
+        section p {
+            line-height: 1.7;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 35px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .card h3 {
+            color: #176b91;
+            margin-bottom: 15px;
+        }
+
+        .product {
+            border-top: 4px solid #42c5d9;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 14px;
+            margin: 10px 0;
+            border: 1px solid #ccd5df;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        form {
+            max-width: 550px;
+            margin: 30px auto 0;
+        }
+
+        footer {
+            background: #102b4e;
+            color: white;
+            padding: 35px;
+            text-align: center;
+            line-height: 2;
+        }
+
+        footer a {
+            color: #42c5d9;
+            text-decoration: none;
+        }
+
+        @media(max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav {
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            section {
+                padding: 55px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<header>
+<img src="Logo.jpg" class="Logo">
+
+
+
+    <nav>
+        <a href="#start">Startseite</a>
+        <a href="#ueber">Über uns</a>
+        <a href="#team">Team</a>
+        <a href="#artikel">Artikelliste</a>
+        <a href="#dienstleistungen">Dienstleistungen</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+</header>
+
+<!-- STARTSEITE -->
+<div class="hero" id="start">
+    <h1>Welcome to </h1>
+    <p><h1><div class="logo">CBS Customized Business Solutions GmbH - Softwarelösungen</div></h1> <b>Ihre Zukunft. Unsere Lösungen.</b></p>
+
+    <div>
+        <a href="#team" class="button">Unser Team</a>
+        <a href="#artikel" class="button">Unsere Artikel</a>
+    </div>
+</div>
+
+<!-- ÜBER UNS -->
+<section id="ueber">
+    <h2>Über uns</h2>
+
+    <p>
+        Willkommen bei CBS – Customized Business Solutions,
+        der Übungsfirma der HAK Weiz.
+        Wir stehen für innovative Ideen, Teamarbeit und
+        kundenorientierte Lösungen.
+        Unser Ziel ist es, wirtschaftliche Abläufe kennenzulernen
+        und praktische Erfahrungen in der Geschäftswelt zu sammeln.
+    </p>
+</section>
+
+<!-- TEAM -->
+<section id="team" style="background:#eaf1f7;">
+    <h2>Unser Team</h2>
+    <p>Gemeinsam arbeiten wir an individuellen Lösungen.</p>
+
+    <div class="cards">
+       <center><p><div class="card">
+            <h3><b>Geschäftsführung</b></h3>
+			<p><img src="GF.jpg" class="Geschäftsführung"></p>
+            <p>Prof. Ingrid Zengerer</p>
+            <p>Verantwortlich für die Unternehmensleitung.</p>
+        </center></div>
+		</p>
+		<p>
+		</p>
+		<p>
+		</p>
+		<p>
+		</p>
+        <div class="card">
+            <h3>Marketing</h3>
+            <p><img src="Marketing.jpg" class="Marketing"></p>
+			<p>Hanna Kreimer, Robert Pfingstl, Martin Derler</p>
+            <p>Verantwortlich für Werbung und Social Media.</p>
+        </div>
+
+        <div class="card">
+            <h3>Verkauf</h3>
+			<p><img src="Verkauf.jpg" class="Verkauf"></p>
+            <p>Thomas Krenn & David Feest</p>
+            <p>Verantwortlich für Kundenbetreuung und Verkauf.</p>
+        </div>
+
+        <div class="card">
+            <h3>Buchhaltung</h3>
+			<p><img src="Buchhaltung.jpg" class="Buchhaltung"></p>
+            <p>Laura Hirzer & Sophie Ecker</p>
+            <p>Verantwortlich für Rechnungswesen und Buchhaltung.</p>
+        </div>
+		<div class="card">
+            <h3>Personal</h3>
+			<p><img src="Personal.jpg" class="Personal"></p>
+            <p>Marie Loder & Elisa Klautzer</p>
+            <p>Verantwortlich für Gehalt und Finanzielles</p>
+        </div>
+		<div class="card">
+            <h3>Sekretariat</h3>
+			<p><img src="Sekretariat.jpg" class="Sekretariat"></p>
+            <p>Miriam Reisinger & Katharina Fetz</p>
+            <p>Verantwortlich für das Schreiben und Beantworten von E-Mails.</p>
+        </div>
+		<div class="card">
+            <h3>Einkauf</h3>
+			<p><img src="Einkauf.jpg" class="Einkauf"></p>
+            <p>Jakob Feldhofer & Niklas Stelzer</p>
+            <p>Verantwortlich für das Schreiben von Anfragen und Bestellungen</p>
+        </div>
+    </div>
+</section>
+
+<!-- ARTIKELLISTE -->
+<section id="artikel">
+    <h2>Unsere Artikelliste</h2>
+    <p>Entdecken Sie unsere Produkte und Angebote.</p>
+
+  
+
+    <div class="cards" id="produktListe">
+
+        <div class="card product">
+            <h3>Unsere Produkte</h3>
+            <p></p>
+        </div>
+
+    </div>
+</section>
+
+<!-- DIENSTLEISTUNGEN -->
+<section id="dienstleistungen" style="background:#eaf1f7;">
+    <h2>Unsere Dienstleistungen</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Beratung</h3>
+            <p>Individuelle Beratung und Unterstützung für unsere Kunden.</p>
+        </div>
+
+        <div class="card">
+            <h3>Kundenservice</h3>
+            <p>Freundliche Betreuung und kompetente Unterstützung.</p>
+        </div>
+
+        <div class="card">
+            <h3>Business Solutions</h3>
+            <p>Kreative und moderne Lösungen für unterschiedliche Anforderungen.</p>
+        </div>
+    </div>
+</section>
+
+<!-- KONTAKT -->
+<section id="kontakt">
+    <h2>Kontakt</h2>
+
+    <p>
+        CBS – Customized Business Solutions<br>
+        HAK Weiz, Österreich<br>
+        E-Mail: cbs@hakweiz.at<br>
+        Telefon: +43 5 0248044-710 
+
+    </p>
+	<br></br>
+    <p><b><h3>Ihr Anliegen ist unser Auftrag</h3></b></p>
+	<form onsubmit="nachrichtSenden(event)">
+        <input type="text" placeholder="Ihr Name" required>
+        <input type="email" placeholder="Ihre E-Mail-Adresse" required>
+        <input type="text" placeholder="Betreff" required>
+        <textarea rows="5" placeholder="Ihre Nachricht..." required></textarea>
+
+        <button type="submit" class="button">
+            Nachricht senden
+        </button>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <h3>CBS – Customized Business Solutions</h3>
+    <p>Übungsfirma der HAK Weiz</p>
+
+    <p>
+        <a href="#start">Startseite</a> |
+        <a href="#team">Team</a> |
+        <a href="#artikel">Artikelliste</a> |
+        <a href="#kontakt">Kontakt</a>
+    </p>
+
+    <p>© 2026 CBS – Customized Business Solutions</p>
+</footer>
+
+<script>
+    // Artikelsuche
+    function artikelSuchen() {
+        let eingabe = document.getElementById("suche")
+            .value.toLowerCase();
+
+        let artikel = document.querySelectorAll("#produktListe .card");
+
+        artikel.forEach(function(item) {
+            let text = item.textContent.toLowerCase();
+
+            item.style.display = text.includes(eingabe)
+                ? "block"
+                : "none";
+        });
+    }
+
+    // Kontaktformular
+    function nachrichtSenden(event) {
+        event.preventDefault();
+
+        alert("Vielen Dank für Ihre Nachricht! Das Formular ist derzeit eine Demo.");
+
+        event.target.reset();
+    }
+</script>
+
+</body>
+</html>
